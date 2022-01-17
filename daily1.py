@@ -52,7 +52,7 @@ car  #mutable , value can be changed
 
 #%%frozen Dictionaries https://pypi.org/project/frozendict/
 #conda install -c conda-forge frozendict #from anaconda as admin
-#pip install frozendict   #install this library
+pip install frozendict   #install this library
 from frozendict import frozendict
 fd = frozendict({ 'brand': 'Honda' })
 fd
@@ -132,7 +132,7 @@ list5
 for i in tuple1:    print(i, end ='\t')
 help(range)  # start, stop, step; does not take keyword
 range(1, 100, 2)  #nothing happens, though it generates 
-for i in range(1, 100, 2):    print(i, end=' ')
+for i in range(1, 100, 5):    print(i, end=' ')
 
 #odd nos between x & y    
 
@@ -156,7 +156,7 @@ marksz
 #combine and then split
 
 #%% #numpy - array - same data type - numerical python
-list1 = [1,2,3,5]
+list1 = [1,2,3,5,'a']
 list1
 import numpy
 numpy.array([10,20])
@@ -281,7 +281,7 @@ data2a  #not defined
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 data2b #not defined
-data2b = pd.read_csv('E:/analytics/projects/pyanalytics/mtcars.csv')
+data2b = pd.read_csv('C:/analytics/projects/pyanalytics/mtcars.csv')
 data2b
 #csv in any other location - full path
 data2b
